@@ -1,0 +1,13 @@
+Version: '3.2'
+
+services:
+  python:
+    image: py21/python:1.0
+    build: ./python
+    container_name: 'py21_python'
+    stdin_open: true
+    tty: true
+    working_dir: '/tmp/work'
+    volumes:
+      - ../python:/tmp/work
+      
